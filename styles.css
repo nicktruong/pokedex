@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Flexo;
+  src: url("./assets/fonts/flexo-bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Flexo;
+  src: url("./assets/fonts/flexo-demi.woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Flexo;
+  src: url("./assets/fonts/flexo-medium.woff");
+  font-weight: 500;
+}
+
+.main {
+  background-image: url("./assets/container_bg.png");
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.pokes {
+  background-color: #ffffff;
+  max-width: 1048px;
+  margin: 0 auto;
+  display: grid;
+  padding: 2rem 24px;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 50px calc(100px / 3);
+}
+
+.pokes__img-container {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+
+.pokes__img {
+  width: 100%;
+  margin-bottom: 6px;
+  object-fit: contain;
+}
+
+.pokes__tag {
+  font-family: "Flexo", monospace;
+  font-size: 0.8rem;
+  color: #919191;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.pokes__name {
+  font-family: "Flexo", monospace;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pokes__abilities {
+  display: flex;
+  gap: 3px;
+}
+
+/* dynamic generating styles via JS */
+.pokes__ability {
+  font-family: "Flexo", monospace;
+  font-weight: 500;
+  font-size: 11px;
+  width: 74px;
+  border-radius: 4px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.pokes__ability--grass {
+  background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+}
+
+.pokes__ability--poison {
+  background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+  color: #ffffff;
+}
+
+.pokes__ability--fire {
+  background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+  color: #ffffff;
+}
+/* dynamic generating styles via JS */
