@@ -38,6 +38,11 @@
   gap: 50px calc(100px / 3);
 }
 
+.pokes__article {
+  display: flex;
+  flex-direction: column;
+}
+
 .pokes__img-container {
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -45,6 +50,7 @@
   align-items: center;
   justify-content: center;
   aspect-ratio: 1 / 1;
+  flex-grow: 1;
 }
 
 .pokes__img {
@@ -67,13 +73,12 @@
   margin-bottom: 6px;
 }
 
-.pokes__abilities {
+.pokes__types {
   display: flex;
   gap: 3px;
 }
 
-/* dynamic generating styles via JS */
-.pokes__ability {
+.pokes__type {
   font-family: "Flexo", monospace;
   font-weight: 500;
   font-size: 11px;
@@ -82,18 +87,3 @@
   line-height: 18px;
   text-align: center;
 }
-
-.pokes__ability--grass {
-  background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
-}
-
-.pokes__ability--poison {
-  background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-  color: #ffffff;
-}
-
-.pokes__ability--fire {
-  background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
-  color: #ffffff;
-}
-/* dynamic generating styles via JS */
